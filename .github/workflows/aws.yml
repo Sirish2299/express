@@ -31,13 +31,12 @@ on:
     branches: [ "master" ]
 
 env:
-  AWS_REGION: MY_AWS_REGION                   # ap-south-1
-  ECR_REPOSITORY: MY_ECR_REPOSITORY           # demo-assignment1
-  ECS_SERVICE: MY_ECS_SERVICE                 # set this to your Amazon ECS service name
-  ECS_CLUSTER: MY_ECS_CLUSTER                 # demo-assignment1
-  ECS_TASK_DEFINITION: MY_ECS_TASK_DEFINITION # set this to the path to your Amazon ECS task definition
-                                               # file, e.g. .aws/task-definition.json
-  CONTAINER_NAME: MY_CONTAINER_NAME           # demo-assignment1
+  AWS_REGION: ap-south-1
+  ECR_REPOSITORY: demo-assignment1
+  ECS_SERVICE: demo-assignment1                 
+  ECS_CLUSTER: demo-assignment1                
+  ECS_TASK_DEFINITION: .github/workflows/task-definition.json
+  CONTAINER_NAME: demo-assignment1
 
 permissions:
   contents: read
